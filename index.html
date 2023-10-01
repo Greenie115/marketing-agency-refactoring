@@ -100,9 +100,15 @@
     <footer>
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
-            &copy; 2019 Horiseon Social Solution Services, Inc.
+            &copy; <span id="year"></span> Horiseon Social Solution Services, Inc.
         </p>
     </footer>
+
+    <!-- Dynamic year added -->
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
 </body>
 
 </html>
